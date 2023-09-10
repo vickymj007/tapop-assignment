@@ -1,0 +1,51 @@
+.navbar{
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.navbar-wrapper{
+    color: white;
+    padding: 12px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.navbar-wrapper > button{
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,blue,red);
+    cursor: pointer;
+}
+.navbar-wrapper .marquee {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.navbar-wrapper .marquee h2{
+    padding: 0 6rem;
+    animation: marquee-effect 6000ms linear infinite;
+    white-space: nowrap;
+}
+.marquee h2 span {
+    color: #fca311;
+}
+
+@keyframes marquee-effect{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
